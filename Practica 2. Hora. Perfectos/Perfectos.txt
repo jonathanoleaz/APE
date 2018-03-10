@@ -1,0 +1,19 @@
+Algoritmo Programa Perfectos.
+
+INPUT: 0
+OUTPU: 0
+
+	BEGIN
+	INT num,i,j,acum;
+	PRINT "N=";
+	num <-- scanf()
+
+	FOR i <--2 UP TO num DO
+		acum=0;
+		FOR j <--i UP TO i DO
+			IF (i%j==0) THEN acum=acum+j;
+		END FOR
+		IF i==acum THEN print i
+	END FOR
+	PRINT "Terminado" 
+END
